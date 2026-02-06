@@ -1,14 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First HTML Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007BFF, #00c3ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            background-color: white;
+            color: #007BFF;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        /* Services */
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Features */
+        .features {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .features li {
+            margin: 10px 0;
+        }
+
+        /* Contact */
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>Hello, World! 👋</h1>
-  <p>This is a basic HTML file.</p>
+    <header>
+        <h1>My Frontend Website</h1>
+        <p>Simple • Clean • Modern</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Build Modern Websites</h1>
+        <p>Learn HTML, CSS, and Frontend Development</p>
+        <button>Get Started</button>
+    </div>
+
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Beautiful and responsive web designs.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Dev</h3>
+                <p>Interactive UI using HTML & CSS.</p>
+            </div>
+            <div class="card">
+                <h3>Optimization</h3>
+                <p>Fast and optimized webpages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ul class="features">
+            <li>✔ Beginner friendly design</li>
+            <li>✔ Clean and modern UI</li>
+            <li>✔ Responsive layout</li>
+            <li>✔ Industry best practices</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My Frontend Website | Built with ❤️</p>
+    </footer>
 
 </body>
 </html>
